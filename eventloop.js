@@ -41,3 +41,19 @@ async function div(a, b) {
 // issues => rejected => .catch()
 
 // async await => next session
+
+// api call => data from server
+async function getUserData(cb) {
+  try {
+    let url = `https://jsonplaceholder.typicode.com/users`;
+    let response = await fetch(url, {
+      method: "GET",
+    });
+    let data = await response.json();
+    cb(true, data);
+  } catch (error) {
+    cb(false, error);
+  }
+}
+
+getUserData((status, relay) => {});
