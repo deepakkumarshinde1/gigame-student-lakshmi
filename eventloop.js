@@ -57,3 +57,15 @@ async function getUserData(cb) {
 }
 
 getUserData((status, relay) => {});
+
+let url = `https://jsonplaceholder.typicode.com/users`;
+fetch(url, {
+  method: "GET",
+})
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch(() => {});
