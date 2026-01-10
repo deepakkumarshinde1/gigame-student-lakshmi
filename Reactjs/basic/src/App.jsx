@@ -1,7 +1,8 @@
 import { useState } from "react";
 import List from "./components/List";
 import Counter from "./components/Counter";
-
+import BlogsPage from "./components/ BlogsPage";
+// import "./App.css";
 function App() {
   let [inputText, setInputText] = useState("deepak");
   let [list, setList] = useState([]);
@@ -10,13 +11,15 @@ function App() {
     price: 45000,
   });
   let [toggle, setToggle] = useState(false);
+  let [text] = useState("Suraj");
 
   return (
     <>
-      <List />
+      {/* <List text={text} /> */}
+      {/* <Counter />
       <Counter />
-      <Counter />
-      <Counter />
+      <Counter /> */}
+      <BlogsPage />
     </>
   );
 }
