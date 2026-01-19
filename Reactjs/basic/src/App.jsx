@@ -2,6 +2,7 @@ import { useState } from "react";
 import List from "./components/List";
 import Counter from "./components/Counter";
 import BlogsPage from "./components/ BlogsPage";
+import Input from "./components/Input";
 // import "./App.css";
 function App() {
   let [inputText, setInputText] = useState("deepak");
@@ -19,7 +20,8 @@ function App() {
       {/* <Counter />
       <Counter />
       <Counter /> */}
-      <BlogsPage />
+      {/* <BlogsPage /> */}
+      <Input text="Deepakkumar" />
     </>
   );
 }
