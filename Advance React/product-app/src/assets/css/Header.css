@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #222;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 8px;
+  color: #f4c430;
+}
+
+.nav-links a,
+.auth-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.nav-links a i,
+.auth-links a i {
+  margin-right: 5px;
+}
+
+.nav-links a:hover,
+.auth-links a:hover {
+  text-decoration: underline;
+}

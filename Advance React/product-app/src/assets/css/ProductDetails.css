@@ -1,0 +1,23 @@
+.product-details {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+}
+
+.images img {
+  width: 120px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.info {
+  max-width: 500px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
